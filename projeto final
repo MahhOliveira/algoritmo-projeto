@@ -1,0 +1,149 @@
+#include <stdio.h>
+int main()
+int numSessoes = 0;
+
+while(numSessoes !=2){
+    printf(''informe a quantidade de sessoes (aceitando apenas 2):'');
+    scanf(''%d'',&numSessoes);
+    if(numSessoes !=2){
+    printf(''a quantidade de sessoes deve ser exatamente 2./n'');
+ }
+}
+int numPessoas=0;
+while(numPessoas<10){
+    printf(''informe a quantidade de pessoas que assistiram ao filme (nao aceitando valor inferior a 10):);
+    scanf(''%d'',&numPessoas);
+    if(numPessoas<10){
+        printf(''a quantidade de pessoas deve ser maior ou igual a 10./n'');
+ }
+}
+ char sexo;
+ int idade;
+ for(int i=0;i<numPessoas;i++){
+    //le o sexo e valida se ele é M ou F
+    do{
+        printf(''informe o sexo da pessoa %d (M- Masculino, F-Feminino):'',i+1);
+        scanf(''%c'',&sexo);
+    }while (sexo !='M'&& sexo !='F');
+
+ //le a idade e valida se ela está entre 3 e 100
+ do{
+    printf(''informe a idade da pessoa %d (de 3 a 100 anos):'',i+1);
+    scanf(''%d'',&idade);
+    if(idade<3 || idade>100){
+    printf(''a idade deve estar entre 3 e 100 anos\n'');
+    }
+ }whilw (idade <3 || idade>100);
+
+ printf(''informe a opcao desejada (inteira ou meia):'');
+ scanf(''%s'',opcao);
+
+ whilw (strcmp(opcao,''inteira'')!=0&& strcmp(opcao,''meia'')!=0){
+    printf(''opcao invalida. informe a opcao desejada (inteira ou meia):'');
+    scanf(''%s'',opcao);
+ }
+
+ int numFeminino = 0;
+ int numMasculino = 0;
+ //le os dados de cada pessoa e incrementa a contagem de pessoas de cada sexo
+ 
+ for(int i=0;|< numpessoas;i++){
+    //le o sexo e valida se ele é M ou F
+
+    if(sexo=='M'){
+        numMasculino++;
+    }else}
+    numFeminino++;
+    }
+}
+//exibe a quantidade de pessoas de cada sexo
+
+printf(''quantidade de pessoas do sexo feminino:%d\n'',numFeminino);
+printf(''quantidade de pessoas do sexo masculino:%d\n'',numMasculino);
+
+int faixa1 = 0// 3-5 anos
+int faixa2 = 0 //6-12 anos
+int faixa3 = 0 // 13-17 anos
+int faxa4 = 0 // 18 anos ou mais
+
+//le os dados de cada pessoa e incremente a contagem de pessoas em cada faixa de idade
+
+for(int i = 0;|< numPessoas;i++){
+    //le a idade valida se ela está entre 3 e 100
+
+    if(idade>=3 && idade <=5){
+        faixa1++;
+    }else if (idade >=6 && idade <=12){
+    }else if (idade>=13 && idade <=17){
+        faixa3++;
+    }else{
+        faixa4++;
+    }
+}
+
+//exibe a quantidade de pessoas em cada faixa de idade
+
+printf(''quantidade de pessoas com idade entre 3 e 5 anos:%d\n'',faixa1);
+printf(''quantidade de pessoas com idade entre 6 e 12 anos:%d'',faixa2);
+printf(''quantidade de pessoas com idade entre 13 e 17 anos:%d'',faixa3);
+printf(''quantidade de pessoas com idade entre 18 anos ou mais:%d'',faixa4);
+
+int numMaioresMasculino=0;
+int numMaioresFeminino=0;
+//le os dados de cada pessoa e incrementa a cotagem de pessoas maiores de idade do sexo masculino e feminino
+
+for (int i = 0;i<numPessoas;i++){
+    //le o sexo e valida se ele é M ou F
+    //le a idade e valida se ela está entre 3 e 100
+if(idade>=18){
+    if(sexo=='M'){
+
+}
+}
+}
+//exibe a quantidade de pessoas maiores de idade do sexo masculino e feminino
+printf(''quantidade de pessoas maiores de idade do sexo masculino:%d\n'',numMaioresMasculino);
+printf(''quantidade de pessoas maiores de idade do sexo feminino:%d\n'',numMaioresFeminino);
+
+float valorTotalSessao1=0;
+float valorTotalSessao2=0;
+float valorTotalSessao1=0;
+float valorTotalSessao1=0;
+float valorTotalSessao2=0;
+float valorTotalSessao2=0;
+//le os dados de cada pessoa e incrementa o valor total arrecadado e a contagem de pagamentos de inteira e meia entrada
+ 
+ for(strcmp(opcao,''inteira'')==0){
+    valorTotalSessao1+=10;
+    numintwirasessao1++;
+ }else{
+    valorTotalSessap1+=5;
+    numMeiaSessao1++;
+ }
+}
+//repete o processo para a segunda sessão
+//le os dados de cada pessoa e incremente o valor total arrecadado e a contagem de pagamentos de inteira e meia entrada
+for(int i=0;i<numPessoas;i++){
+    //le a opção escolhida(inteira ou meia)
+    //incrementa o valor total arrecadado e a contagem de pagamentos de inteira e meia entrada de acordo com a opção escolhida
+    if(strcmp(opcao,''inteira'')==0){
+        valorTotaldaSessao2+=10;
+        numInteiraSessao2++;
+    }else{
+        valorTotalSesssao2+=5;
+        nummeiaSessao2++;
+ }
+}
+//exibe o valor total arrecadado em cada sessão e informa se houve mais pagamento de inteira que de meia entrada
+printf(''valor total arrecadado na primeira sessao:%2f\n'',valorTotalSessao1);
+if(numInteiraSessao1 > numMeiaSessao1){
+    printf(''houve mais pagamento de inteira que de meia entrada na segunda sessao.\n'');
+}
+int somaIdadesSessao1=0;
+int somaIdadesSessao2=0;
+int numPessoasSessao1=0;
+int numPessoasSessao2=0;
+//le os dados de cada pessoa e incremente a soma das idades e a contagem de pessoas de acordo com a sessao
+for(int i=0; i<numPessoas;i++){
+    //le a idade
+}
